@@ -162,4 +162,3 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 # remove title bar
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
-
