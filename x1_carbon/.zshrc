@@ -99,4 +99,9 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 #export SDKMAN_DIR="/home/hyun/.sdkman"
 #[[ -s "/home/hyun/.sdkman/bin/sdkman-init.sh" ]] && source "/home/hyun/.sdkman/bin/sdkman-init.sh"
 
+#rvm setting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+
+#android home setting
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
