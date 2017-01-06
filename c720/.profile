@@ -19,33 +19,11 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-## keyboard delay setting
 xset r rate 290 40
-## black screen after 120 second
-xset s 180
+xset s 120
 
-## after 10 minute pm-suspend
-#xautolock -time 10 -locker "sudo pm-suspend" &
-
-## disable touchpad
-#xinput --disable 11
-## disable touchpad edge scrolling
 synclient VertEdgeScroll=0
-## disable tap click
 synclient MaxTapTime=0
-
-## 드랍박스 스타트
-#dropbox start
-## 텔레그램 스타트
-#./Documents/Telegram/Telegram
-
-## natural scrolling setting
 synclient HorizTwoFingerScroll=1
-synclient HorizScrollDelta=-111
-synclient VertScrollDelta=-111
-
-## xrandr setting create 2560 mode
-xrandr --newmode 2560x1440@60R 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
-xrandr --addmode HDMI1 2560x1440@60R
-#xrandr --output HDMI1 --mode 2560x1440@60R --auto --above eDP1
-
+synclient HorizScrollDelta=-30
+synclient VertScrollDelta=-30
